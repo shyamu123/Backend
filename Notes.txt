@@ -1,0 +1,4 @@
+creat table tablename
+insert into tabalename(id,name,age)values
+select * from tabalename
+drop table tablename
