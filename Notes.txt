@@ -1,4 +1,36 @@
+\sql 
+\connect root@localhost
+show databases;
+use databasename
+create database if not exists
+drop database if exists tablename
 creat table tablename
 insert into tabalename(id,name,age)values
 select * from tabalename
 drop table tablename
+show tables
+
+-> KEY:
+    primary key
+    foreign key
+
+-> DDl(Data Definition Language):
+    Create,
+    Alter,
+    Rename,
+    Truncate & drop
+
+-> DQL(Data Query Language):
+    select
+
+-> DML(Data Manipulation Language):
+    Insert,
+    Update & Delete
+
+-> DCL(Data Control Language):
+    Grant & Revoke permission to users
+
+-> TCL(Transaction Control Language):
+    start Transaction,
+    Commit,
+    Rollback
