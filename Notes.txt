@@ -83,21 +83,6 @@ select city, count(name)
 from student
 group by city
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 int unique
 int primary key
 int not null
