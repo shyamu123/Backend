@@ -83,6 +83,40 @@ select city, count(name)
 from student
 group by city
 
+select city,count(name)
+from student
+group by city
+having max(marks)>70
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 int unique
 int primary key
 int not null
