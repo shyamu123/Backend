@@ -6,9 +6,101 @@ create database if not exists
 drop database if exists tablename
 creat table tablename
 insert into tabalename(id,name,age)values
-select * from tabalename
 drop table tablename
 show tables
+
+select * 
+from tabalename
+
+select col1name,col2name 
+from tabalename
+
+select distinct col1name 
+from tabalename
+
+select * 
+from tablename 
+where marks > 10 
+
+select * 
+from tablename 
+where city="mumbai"
+
+select * 
+from tablename 
+where marks+10 > 100
+
+select * 
+from tablename 
+where marks=10
+
+select * 
+from tablename 
+where marks > 10 and city="mumbai"
+
+select * 
+from tablename 
+where marks > 10 or city="mumbai"
+
+select * 
+from tablename 
+where marks between 80 and 90
+
+select * 
+from tablename 
+where city in ("mumbai","delhi")
+
+select * 
+from tablename 
+where city not in ("mumbai","delhi")
+
+select * 
+from tabalename 
+where marks > 75
+limit 3
+
+select *
+from tabalename
+order by city asc
+
+select *
+from tabalename
+order by city desc
+
+select max(marks)
+from student
+
+select min(marks)
+from student
+
+select avg(marks)
+from student
+
+select count(rollno)
+from student;
+
+select city, count(name)
+from student
+group by city
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+int unique
+int primary key
+int not null
 
 -> KEY:
     primary key
