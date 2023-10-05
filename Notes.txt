@@ -85,37 +85,45 @@ group by city
 
 select city,count(name)
 from student
+where grade="A"
 group by city
-having max(marks)>70
+having max(marks)>=93
+order by city asc;
 
+update student
+set grade = "O"
+where grade ="A";
 
+set sql_safe_updates = 0;
 
+update student
+set marks= marks+1;
 
+delere from student
 
+delere from student
+where marks <33;
 
+update dept
+set id=103
+where id=102;   
 
+alter table student
+add column age int;
 
+alter table student
+drop column age;
 
+alter table tabalename
+rename to newtablename;
 
+alter table tabalename
+change column id stud_id int;
 
+alter table tabalename
+modify colname newdatatype ;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Truncate table tabalename
 
 int unique
 int primary key
@@ -123,7 +131,10 @@ int not null
 
 -> KEY:
     primary key
-    foreign key
+    foreign key:
+        foreign key (dept_id) references dept(id)
+        on update cascade
+        on delete cascade
 
 -> DDl(Data Definition Language):
     Create,
